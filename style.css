@@ -1,3 +1,5 @@
+/* Custom Color Variables */
+
 :root{
     --main-dark-blue: #242d36;
     --main-blue: #a5cdcd;
@@ -6,13 +8,9 @@
     --main-pink-salmon: #e5a091;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* Custom Color Variables End */
 
-body {
-    margin: 0px;
-}
+/* Color Classes */
 
 .color-dark-blue{
     color: var(--main-dark-blue);
@@ -34,6 +32,10 @@ body {
     color: var(--main-pink-salmon);
 }
 
+/* Color Classes End */
+
+/* Background Color Classes */
+
 .bg-color-dark-blue{
     background-color: var(--main-dark-blue);
 }
@@ -52,6 +54,20 @@ body {
 
 .bg-color-pink-salmon{
     background-color: var(--main-pink-salmon);
+}
+
+/* Background Color Classes End */
+
+/* Element Defaults */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
 }
 
 h1{
@@ -81,6 +97,15 @@ a{
     padding: 0.6em;
 }
 
+/* Element Defaults End */
+
+/* Navigation Header CSS */
+
+#header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav a:hover{
     text-decoration: none;
     color: var(--main-white);
@@ -95,15 +120,9 @@ nav a:hover{
     }
 }
 
-#container{
-    display: flex;
-    flex-direction: column;
-}   
+/* Navigation Header CSS End */
 
-#header nav{
-    display: flex;
-    justify-content: flex-end;
-}
+/* Title CSS */
 
 #title{
     height: 100vh;
@@ -117,6 +136,10 @@ nav a:hover{
     text-align: center;
 }
 
+/* Title CSS End */
+
+/* About Me CSS */
+
 #about {
     display: flex;
     flex-direction: column;
@@ -125,6 +148,8 @@ nav a:hover{
     height: 550px;
     background-color: var(--main-blue);
 }
+
+/* About Me Headers CSS */
 
 #about h1, #about h2{
     font-family: 'Comfortaa';
@@ -140,6 +165,10 @@ nav a:hover{
 #about h2{
     font-size: 35px;
 }
+
+/* About Me Text Headers End */
+
+/* About Me Text CSS */
 
 #about-details{
     display: flex;
@@ -164,6 +193,8 @@ nav a:hover{
     box-shadow: 5px 5px 0 rgba(0,0,0,0.20);
 }
 
+/* About Me Text CSS End */
+
 #about-details img{  
     margin: 20px 0px 20px 0px;
     border: 10px solid var(--main-dark-blue);
@@ -171,6 +202,56 @@ nav a:hover{
     width: 350px;
     box-shadow: 5px 5px 0 rgba(0,0,0,0.20);
 }
+
+/* About Me CSS End */
+
+/* Collapsible CSS */
+
+.panel-group{
+    margin: 0px;    
+}
+
+.panel{
+    border: none;
+}
+
+.panel-body {
+    float: left;
+    width: 33.33%;
+    padding: 20px 10px 20px 10px;
+    height: 350px;
+}
+
+.panel-body h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.panel-body h2{
+    font-weight: bold;
+    color: var(--main-pink-salmon);
+}
+
+.collapsibles a{
+    font-family: 'Comfortaa';
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+.collapsibles a:hover {
+    color: var(--main-pink-salmon);
+    transition-delay: 0s;
+}
+
+.glyphicon-menu-down, .work-icons{
+    font-size: 25px;
+}
+
+/* Work Collapsible CSS */
 
 #work .panel-heading{
     background-color: var(--main-light-blue);
@@ -181,10 +262,24 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     background-color: var(--main-light-blue);
     border-top: 5px solid var(--main-pink-salmon);
 }
+
+#work-center{
+    border-left: 5px solid var(--main-pink-salmon) !important;
+    border-right: 5px solid var(--main-pink-salmon) !important;
+}
+
+#collapse1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Work Collapsible CSS End */
+
+/* Hobbies Collapsible CSS */
 
 #hobbies .panel-heading{
     background-color: var(--main-white);
@@ -206,29 +301,18 @@ nav a:hover{
     list-style: none;
 }
 
-.panel-group{
-    margin: 0px;
+#collapse2 .panel-body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
 }
 
-.panel{
-    border: none;
-}
+/* Hobbies Collapsible CSS */
 
+/* Collapsible CSS */
 
-.collapsibles a{
-    font-family: 'Comfortaa';
-    font-size: 45px;
-    font-weight: bold;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 1s;
-    transition-delay: 0s;
-}
-
-.collapsibles a:hover {
-    color: var(--main-pink-salmon);
-    transition-delay: 0s;
-}
+/* Footer CSS */
 
 #footer{
     font-family: 'Open Sans';
@@ -239,44 +323,15 @@ nav a:hover{
     height: 150px;
 }
 
-.panel-body {
-    float: left;
-    width: 33.33%;
-    padding: 20px 10px 20px 10px;
-    height: 350px;
-}
+/* Footer CSS End */
 
-.panel-body h1{
-    font-size: 25px;
-    font-weight: bold;
-}
+/* Responsive CSS */
 
-.panel-body h2{
-    font-weight: bold;
-    color: var(--main-pink-salmon);
-}
-
-#collapse1:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#collapse2 .panel-body{
-    height: 200px;
-}
-
-#work-center{
-    border-left: 5px solid var(--main-pink-salmon) !important;
-    border-right: 5px solid var(--main-pink-salmon) !important;
-}
-
-.glyphicon-menu-down, .work-icons{
-    font-size: 25px;
-}
-
+/* Tablets */
 
 @media(max-width: 850px){
+
+    /* About Me Resizing */
 
     #about{
         padding-bottom: 20px;
@@ -291,17 +346,21 @@ nav a:hover{
         font-size: 25px;
     }
 
+    #about-details p{
+        margin: 0px;
+        width: 90%;
+        height: 20%;
+    }
+
+    /* About Me Resizing End */
+
+    /* About Me Change Format */
+
     #about-details{
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
-    }
-
-    #about-details p{
-        margin: 0px;
-        width: 90%;
-        height: 20%;
     }
 
     #about-header{
@@ -328,6 +387,10 @@ nav a:hover{
         order: 6;
     }
 
+    /* About Me Change Format End */
+
+    /* Work Collapsible Change Format */
+
     #work .panel-body{
         border-left: 0px !important;
         border-right: 0px !important;
@@ -339,9 +402,17 @@ nav a:hover{
         width: 100%;
     }
 
+    /* Work Collapsible Change Format End */
+
 }
 
+/* Tablets End */
+
+/* Mobile */
+
 @media(max-width: 430px){
+
+    /* Header Resize */
 
     #header nav{
         justify-content: center;
@@ -351,6 +422,10 @@ nav a:hover{
         font-size: 15px;
     }
 
+    /* Header Resize End */
+
+    /* Title Resize */
+
     #title h1{
         font-size: 75px;
     }
@@ -358,6 +433,10 @@ nav a:hover{
     #title h2{
         font-size: 25px;
     }
+
+    /* Title Resize End */
+
+    /* About Me Resize */
 
     #about h1{
         width: 100%;
@@ -368,6 +447,10 @@ nav a:hover{
         width: 80vw;
     }
 
+    /* About Me Resize */
+
+    /* Collapsibles Resize */
+
     .collapsibles a{
         font-size: 20px;
     }
@@ -375,5 +458,18 @@ nav a:hover{
     #hobbies-body li{
         font-size: 15px;
     }
+
+    /* Collapsibles Resize End */
+
+    /* Footer Resize */
+
+    #footer{
+        font-size: 10px;
+    }
+
+    /* Footer Resize End */
 }
 
+/* Mobile End */
+
+/* Responsive CSS End */

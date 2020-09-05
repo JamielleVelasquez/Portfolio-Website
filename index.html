@@ -1,100 +1,133 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+
         <title>Jamielle Velasquez</title>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Bootstrap End -->
+
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- Google Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <!-- Google Fonts End -->
+
     </head>
+
     <body>
-        <div id="container">
-            <div id="header" class="bg-color-dark-blue">
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#work-header" data-toggle="collapse" data-target="#collapse1">Work</a>
-                    <a href="#hobbies" data-toggle="collapse" data-target="#collapse2">Hobbies</a>
-                </nav>
-            </div>
-            <div id="title" class="bg-color-white">
-                <h1>I'm Jam</h1>
-                <h2>a computer science student</h2>
-            </div>
-            <div id="about">
-                <div id="about-details">
-                    <h2 id="about-me" class="color-white">Who am I?</h2>
-                    <h1 id="about-header" class="color-white">About Me</h1>
-                    <h2 id="contact" class="color-white">Contact Me</h2>
-                    <p id="about-me-details" class="bg-color-white">I am Jamielle Velasquez, a 19 year old Computer Science student from the Philippines who has a passion for gaming and loves to program.</p>
-                    <img src='jam_picture.jpg' id="picture">
-                    <p id="contact-details" class="bg-color-white">Email: jamiellevelasquez@gmail.com<br>Cellphone: 0945-299-6697<br>Telephone: 720-6507<br>Instagram: jamvelasquez_<br>Twitter: @JamVlsqz</p>
-                </div>
-            </div>
-            <div class="collapsibles">
-                <div class="panel-group" id="work">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title text-center" id="work-header">
-                                <a data-toggle="collapse" href="#collapse1">What I Do <span class="glyphicon glyphicon-menu-down color-dark-blue"></span></a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse text-center">
-                            <div class="panel-body">
-                                <span class="glyphicon glyphicon-pencil work-icons"></span>
-                                <h1>Designer</h1>
-                                <br>
-                                <p>I am not a professional, but I can design a simple and clean UI with thoughtful interactions.</p>
-                                <br>
-                                <h2>Things I can make:</h2>
-                                <p>UI, Web, Mobile</p>
-                            </div>
-                            <div class="panel-body" id="work-center">
-                                <span class="glyphicon glyphicon-phone work-icons">
-                                    <h1>Front-end Developer</h1>
-                                    <br>
-                                    <p>I'm fairly new to front-end development, but I know the basics.</p>
-                                    <br>
-                                    <h2>Languages I know:</h2>
-                                    <p>HTML, CSS</p>
-                            </div>
-                            <div class="panel-body">
-                                <span class="glyphicon glyphicon-hdd work-icons">
-                                    <h1>Programmer</h1>
-                                    <br>
-                                    <p>I can create games in Unity and code algorithms in C++ and Java.</p>
-                                    <br>
-                                    <h2>I can code in:</h2>
-                                    <p>C++, C#, Unity, Java</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-group" id="hobbies">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title text-center" id="hobbies-header">
-                                <a data-toggle="collapse" href="#collapse2">Hobbies <span class="glyphicon glyphicon-menu-down"></span></a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse text-center">
-                            <div class="panel-body text-center" id="hobbies-body">
-                                <ul>
-                                    <li>I’m a certified food geek, weeaboo and web designer.</li>
-                                    <li>Amateur chef, but one of the Top-ranked players in League of Legends.</li>
-                                    <li>I love it when things are dark, dark coffee, dark UI, and most especially a dark-themed IDE.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block text-center bg-color-dark-blue color-white" id="footer">
-                &copy; 2020 Jamielle Velasquez. All rights reserved.
+        <!-- Navigation Header -->
+        <div id="header" class="bg-color-dark-blue">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#work-header" data-toggle="collapse" data-target="#collapse1">Work</a>
+                <a href="#hobbies" data-toggle="collapse" data-target="#collapse2">Hobbies</a>
+            </nav>
+        </div>
+        <!-- Navigation Header End -->
+
+        <!-- Title -->
+        <div id="title" class="bg-color-white">
+            <h1>I'm Jam</h1>
+            <h2>a computer science student</h2>
+        </div>
+        <!-- Title End -->
+
+        <!-- About Me -->
+        <div id="about">
+            <div id="about-details">
+                <h2 id="about-me" class="color-white">Who am I?</h2>
+                <h1 id="about-header" class="color-white">About Me</h1>
+                <h2 id="contact" class="color-white">Contact Me</h2>
+                <p id="about-me-details" class="bg-color-white">I am Jamielle Velasquez, a 19 year old Computer Science student from the Philippines who has a passion for gaming and loves to program.</p>
+                <img src='jam_picture.jpg' id="picture" alt="A picture of Jamielle Velasquez">
+                <p id="contact-details" class="bg-color-white">Email: jamiellevelasquez@gmail.com<br>Cellphone: 0945-299-6697<br>Telephone: 720-6507<br>Instagram: jamvelasquez_<br>Twitter: @JamVlsqz</p>
             </div>
         </div>
+        <!-- About Me End -->
+
+        <!-- Collapsible -->
+        <div class="collapsibles">
+
+            <!-- Work Collapsible -->
+            <div class="panel-group" id="work">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-center" id="work-header">
+                            <a data-toggle="collapse" href="#collapse1">What I Do <span class="glyphicon glyphicon-menu-down color-dark-blue"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse text-center">
+                        <div class="panel-body">
+                            <span class="glyphicon glyphicon-pencil work-icons"></span>
+                            <h1>Designer</h1>
+                            <br>
+                            <p>I am not a professional, but I can design a simple and clean UI with thoughtful interactions.</p>
+                            <br>
+                            <h2>Things I can make:</h2>
+                            <p>UI, Web, Mobile</p>
+                        </div>
+                        <div class="panel-body" id="work-center">
+                            <span class="glyphicon glyphicon-phone work-icons"></span>
+                            <h1>Front-end Developer</h1>
+                            <br>
+                            <p>I'm fairly new to front-end development, but I know the basics.</p>
+                            <br>
+                            <h2>Languages I know:</h2>
+                            <p>HTML, CSS</p>
+                        </div>
+                        <div class="panel-body">
+                            <span class="glyphicon glyphicon-hdd work-icons"></span>
+                            <h1>Programmer</h1>
+                            <br>
+                            <p>I can create games in Unity and code algorithms in C++ and Java.</p>
+                            <br>
+                            <h2>I can code in:</h2>
+                            <p>C++, C#, Unity, Java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Work Collapsible End -->
+
+            <!-- Hobbies Collapsible -->
+            <div class="panel-group" id="hobbies">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-center" id="hobbies-header">
+                            <a data-toggle="collapse" href="#collapse2">Hobbies <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse text-center">
+                        <div class="panel-body text-center" id="hobbies-body">
+                            <ul>
+                                <li>I’m a certified food geek, weeaboo and web designer.</li>
+                                <li>Amateur chef, but one of the Top-ranked players in League of Legends.</li>
+                                <li>I love it when things are dark, dark coffee, dark UI, and most especially a dark-themed IDE.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hobbies Collapsible End -->
+
+        </div>
+        <!-- Collapsible End -->
+
+        <!-- Footer -->
+        <div class="block text-center bg-color-dark-blue color-white" id="footer">
+            &copy; 2020 Jamielle Velasquez. All rights reserved.
+        </div>
+        <!-- Footer End -->
+
     </body>
 </html>
