@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d32cb73b.css",
+    "main.js": "/static/js/main.dd8bd300.js",
+    "static/media/kaenteng_1.png": "/static/media/kaenteng_1.88d2aeda97615bfd4a13.png",
+    "static/media/kaenteng_3.png": "/static/media/kaenteng_3.d47aa8360f5ced7a06d0.png",
+    "static/media/kaenteng_banner.png": "/static/media/kaenteng_banner.a2d7289f490bf877a24b.png",
+    "static/media/kaenteng_small.jpg": "/static/media/kaenteng_small.143e7ef6636c10a354fd.jpg",
+    "static/media/aboutme_picture2.jpg": "/static/media/aboutme_picture2.3e0b366d0851da4e6d18.jpg",
+    "static/media/kaenteng_2.png": "/static/media/kaenteng_2.eddac761a9fcbc0ab14d.png",
+    "index.html": "/index.html",
+    "main.d32cb73b.css.map": "/static/css/main.d32cb73b.css.map",
+    "main.dd8bd300.js.map": "/static/js/main.dd8bd300.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d32cb73b.css",
+    "static/js/main.dd8bd300.js"
+  ]
+}
