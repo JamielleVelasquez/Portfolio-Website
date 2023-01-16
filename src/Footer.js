@@ -5,10 +5,13 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 function Footer() {
   return (
     <footer className="bg-black text-white p-16 space-y-8">
-      <h1 className="text-[4rem] font-medium tracking-wider leading-none flex flex-row">
+      <a
+        className="text-[4rem] font-medium tracking-wider leading-none flex flex-row"
+        href="/Contact"
+      >
         Let's Work Together
         <MdOutlineKeyboardArrowRight />
-      </h1>
+      </a>
       <hr className="border"></hr>
       <nav className="space-x-20 text-xl ">
         <Link to="/">projects</Link>
