@@ -2,7 +2,14 @@ import "../index.css";
 import Header from "../Header";
 import Footer from "../Footer";
 import { ScrollRestoration } from "react-router-dom";
-import { SiJavascript, SiJava, SiHtml5, SiCss3 } from "react-icons/si";
+import {
+  SiJavascript,
+  SiJava,
+  SiHtml5,
+  SiCss3,
+  SiBootstrap,
+  SiAdobexd,
+} from "react-icons/si";
 import kaenteng_banner from "../Assets/kaenteng_banner.png";
 import kaenteng_1 from "../Assets/kaenteng_1.png";
 import kaenteng_2 from "../Assets/kaenteng_2.png";
@@ -12,8 +19,8 @@ function KaEnteng() {
   return (
     <div className="KaEnteng">
       <Header />
-      <div className="flex flex-row p-16 pt-8">
-        <div className="pr-8 leading-10">
+      <div className="flex flex-row h-screen p-32 space-x-16">
+        <div className="self-center basis-3/5">
           <h1 className="font-bold text-5xl">
             Ka-Enteng's Farm-to-Table Restaurant
           </h1>
@@ -22,11 +29,10 @@ function KaEnteng() {
             <br />
             8/21/21 - 4/22/22
             <br />
-            Front-End Design and Code, Back-End
+            UI Design, Full-Stack Development
           </body>
           <body className="mt-8">
-            A full-stack concept website for a restaurant in the Philippines.
-            Developed as a requirement for my Software Engineering course.
+          This was developed as a requirement for my software engineering course. I designed the UI using Adobe XD and developed the front-end using Bootstrap. I also helped implement the account, reservation, and review functionalities using Java DB.
           </body>
           <div className="mt-8">
             <a
@@ -36,48 +42,38 @@ function KaEnteng() {
               Github Repository Link
             </a>
           </div>
-          <div className="flex flex-row mt-4 justify-between text-4xl">
-            <SiJavascript />
+          <div className="flex flex-row mt-8 justify-between text-4xl">
             <SiJava />
+            <SiJavascript />
             <SiHtml5 />
             <SiCss3 />
+            <SiBootstrap />
+            <SiAdobexd />
           </div>
         </div>
         <div className="flex flex-col place-content-center">
           <img className="rounded-xl shadow-xl" src={kaenteng_banner}></img>
         </div>
       </div>
-      <div className="flex flex-row p-16 pb-0 pt-8">
-        <div className="pr-16 py-16 w-1/2 sticky top-0 h-min">
-          We approached Ka-Enteng's 
+      <div className="flex flex-row p-32 pb-0 pt-8">
+        <div className="text-lg pr-32 py-32 w-1/2 sticky top-0 h-min">
+        The client wanted Ka-Enteng's website to reflect the beauty of the farm. With that in mind, the website was designed with natural colors of greens and browns as well as a simple yet elegant typeface. The client's main goal was to create more exposure for the farm and simplify the reservation process. Customers can also see the reviews of past customers on the landing page. The reviews are updated dynamically based on the review database.
         </div>
         <div className="p-16 bg-grey w-1/2 ">
           <img className="" src={kaenteng_1}></img>
         </div>
       </div>
-      <div className="flex flex-row m-16 my-0 p-16 bg-grey">
+      <div className="flex flex-row m-32 my-0 p-16 bg-grey">
         <div className="w-1/2 ">
           <img className="" src={kaenteng_2}></img>
         </div>
-        <div className="pl-16 w-1/2 flex flex-col place-content-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <div className="text-lg pl-16 w-1/2 flex flex-col place-content-center">
+        The client wanted to streamline the reservation process on their website. Instead of customers calling to make a reservation, they can now do so through the website. The back-end of the website manages the available slots per day and allows customers to make reservations only when space is available. The clients can also view and edit reservations in the database.
         </div>
       </div>
-      <div className="flex flex-row p-16 pt-0">
-        <div className="pr-16 py-16 w-1/2 sticky top-0 h-min">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+      <div className="flex flex-row p-32 pt-0">
+        <div className="text-lg pr-32 py-32 w-1/2 sticky top-0 h-min">
+        Because this website was developed as a requirement for my software engineering course, it went through the software engineering process. This includes a project plan, design document, quality assurance, testing, etc.<button className="mt-8 underline">You can find all of these documents here.</button>
         </div>
         <div className="p-16 bg-grey w-1/2 ">
           <img className="" src={kaenteng_3}></img>
