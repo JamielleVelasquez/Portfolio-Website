@@ -2,6 +2,8 @@ import "./index.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import kaenteng_small from "./Assets/kaenteng_small.jpg";
+import luvamine_small from "./Assets/luvamine_small.jpg";
+import thesis_small from "./Assets/thesis_small.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import {
   SiJava,
@@ -56,9 +58,9 @@ function LandingPage() {
         </h1>
         <p className="text-2xl leading-loose absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           I am a freelance software developer based in the Philippines. <br />
-          I develop software to solve complex problems.
+          I create software to solve complex problems.
           <br />
-          In either tech or gaming, I am constantly striving to improve upon my
+          In both tech and gaming, I am constantly striving to improve upon my
           skills.
         </p>
         <Link
@@ -114,10 +116,10 @@ function LandingPage() {
         </div>
         {/*Project Card*/}
         <div className="p-32 pt-0">
-          <Link to="/Projects/KaEnteng">
+          <Link to="/Projects/Luvamine">
             <div className="flex flex-row">
               <div className="basis-1/2 px-6 pt-6 bg-grey">
-                <img></img>
+                <img src={luvamine_small}></img>
               </div>
               <div className="basis-1/2 p-12 flex flex-col justify-between">
                 <div>
@@ -152,7 +154,7 @@ function LandingPage() {
           <Link to="/Projects/KaEnteng">
             <div className="flex flex-row">
               <div className="basis-1/2 px-6 pt-6 bg-grey">
-                <img></img>
+              <img src={thesis_small}></img>
               </div>
               <div className="basis-1/2 p-12 flex flex-col justify-between">
                 <div>

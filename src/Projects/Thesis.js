@@ -27,12 +27,12 @@ function KaEnteng() {
           <body className="mt-8">
             Full Stack Concept Website
             <br />
-            August / 21 / 21 - April / 22 / 22
+            8/21/21 - 4/22/22
             <br />
             UI Design, Full-Stack Development
           </body>
           <body className="mt-8">
-          This was developed as a requirement for my software engineering course. I designed the UI using Adobe XD and developed the front-end using Bootstrap. I also helped implement the account, reservation, and review functionalities using Java DB. In this project, I learned a lot about the software engineering process.
+          This was developed as a requirement for my software engineering course. I designed the UI using Adobe XD and developed the front-end using Bootstrap. I also helped implement the account, reservation, and review functionalities using Java DB.
           </body>
           <div className="mt-8">
             <a
@@ -42,7 +42,7 @@ function KaEnteng() {
               Github Repository Link
             </a>
           </div>
-          <div className="flex flex-row mt-12 justify-between text-4xl">
+          <div className="flex flex-row mt-8 justify-between text-4xl">
             <SiJava />
             <SiJavascript />
             <SiHtml5 />
@@ -73,7 +73,7 @@ function KaEnteng() {
       </div>
       <div className="flex flex-row p-32 pt-0">
         <div className="text-lg pr-32 py-32 w-1/2 sticky top-0 h-min">
-        Because this website was developed as a requirement for my software engineering course, it went through the software engineering process. This includes a project plan, design document, quality assurance, testing, etc. <br /><button className="mt-8 underline">You can find all of these documents here.</button>
+        Because this website was developed as a requirement for my software engineering course, it went through the software engineering process. This includes a project plan, design document, quality assurance, testing, etc.<button className="mt-8 underline">You can find all of these documents here.</button>
         </div>
         <div className="p-16 bg-grey w-1/2 ">
           <img className="" src={kaenteng_3}></img>

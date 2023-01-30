@@ -6,6 +6,8 @@ import LandingPage from "./LandingPage";
 import About from "./About";
 import Contact from "./Contact";
 import KaEnteng from "./Projects/KaEnteng";
+import Luvamine from "./Projects/Luvamine";
+import Thesis from "./Projects/Thesis";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/Projects/KaEnteng",
     element: <KaEnteng />,
+  },
+  {
+    path: "/Projects/Luvamine",
+    element: <Luvamine />,
+  },
+  {
+    path: "/Projects/Thesis",
+    element: <Thesis />,
   },
 ]);
 
