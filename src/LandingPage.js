@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import kaenteng_small from "./Assets/kaenteng_small.jpg";
 import luvamine_small from "./Assets/luvamine_small.jpg";
-import thesis_small from "./Assets/thesis_small.jpg";
+import thesis_small from "./Assets/thesis_1.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import {
   SiJava,
@@ -151,9 +151,9 @@ function LandingPage() {
         </div>
         {/*Project Card*/}
         <div className="p-32 pt-0">
-          <Link to="/Projects/KaEnteng">
+          <Link to="/Projects/Thesis">
             <div className="flex flex-row">
-              <div className="basis-1/2 px-6 pt-6 bg-grey">
+              <div className="basis-1/2 p-6 bg-grey">
               <img src={thesis_small}></img>
               </div>
               <div className="basis-1/2 p-12 flex flex-col justify-between">

@@ -38,6 +38,7 @@ function KaEnteng() {
             <a
               className="underline"
               href="https://github.com/JamielleVelasquez/Ka-Entengs-Farm-to-Table-Restaurant-Website"
+              target="_blank"
             >
               Github Repository Link
             </a>

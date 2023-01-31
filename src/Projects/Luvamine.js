@@ -17,7 +17,7 @@ import luvamine_3 from "../Assets/luvamine_3.png";
 
 function KaEnteng() {
   return (
-    <div className="KaEnteng">
+    <div className="Luvamine">
       <Header />
       <div className="flex flex-row h-screen p-32 space-x-16">
         <div className="self-center basis-3/5">
