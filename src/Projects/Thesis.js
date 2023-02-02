@@ -65,9 +65,11 @@ function KaEnteng() {
       <div className="flex flex-row p-32 pt-0">
         <div className="text-lg pr-32 py-32 w-1/2 sticky top-0 h-min">
         The results of the study showed an increase in accuracy when SMOTE was utilized. By the end of the study, the new model compared to Reddy et al.’s (2021) base model showed a 3% difference in accuracy, with 89% for the ensembled models with SMOTE compared to 86% for Reddy.
-          <button className="mt-8 underline">
+          <br />
+          <br />
+          <a className="mt-8 underline" href="https://drive.google.com/uc?export=download&id=1rFmZIGmvaVP9SBUyoWvY89UDeVxbbnvS" target="_blank">
             You can download the thesis papers here.
-          </button>
+          </a>
         </div>
         <div className="p-16 bg-grey w-1/2 ">
           <img className="rounded-xl" src={thesis_3}></img>

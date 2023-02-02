@@ -74,7 +74,7 @@ function KaEnteng() {
       </div>
       <div className="flex flex-row p-32 pt-0">
         <div className="text-lg pr-32 py-32 w-1/2 sticky top-0 h-min">
-        Because this website was developed as a requirement for my software engineering course, it went through the software engineering process. This includes a project plan, design document, quality assurance, testing, etc. <br /><button className="mt-8 underline">You can find all of these documents here.</button>
+        Because this website was developed as a requirement for my software engineering course, it went through the software engineering process. This includes a project plan, design document, quality assurance, testing, etc. <br /><br /><a href="https://drive.google.com/uc?export=download&id=1OUqlxjxziRSTXEHp4N4MadQLBq8rd2F2" target="_blank" className="mt-8 underline">You can find all of these documents here.</a>
         </div>
         <div className="p-16 bg-grey w-1/2 ">
           <img className="" src={kaenteng_3}></img>

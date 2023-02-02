@@ -24,16 +24,16 @@ function LandingPage() {
   return (
     <div id="LandingPage">
       <Header />
-      <div className="px-32 flex flex-col place-content-center space-y-8 h-screen">
+      <div className="px-8 sm:px-16 xl:px-32 flex flex-col place-content-center space-y-8 h-screen">
         {/*TODO: Add on-load animations*/}
-        {/*<h1 className="font-medium text-8xl">
+        <h1 className="font-medium text-4xl sm:text-7xl 2xl:text-8xl">
           I'm Jam,
           <br />
           a software developer
           <br />
           passionate about tech.
         </h1>
-        */}
+        {/*
         <h1 className="font-medium text-8xl">
           This website
           <br />
@@ -43,20 +43,25 @@ function LandingPage() {
             but we can still work!
           </Link>
         </h1>
+        */}
+
         {/*TODO: Add on-load and hover animations*/}
-        <a className="underline opacity-75 text-xl" href="#Projects">
+        <a className="underline opacity-75 text-md sm:text-xl" href="#Projects">
           view my projects
         </a>
       </div>
       {/*About Me*/}
-      <div className="p-96 pt-0 mb-64 text-center relative">
-        <h1 className="font-medium text-[13rem] text-left leading-none opacity-5 w-[625px] absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-3/4">
+      <div className="px-8 sm:px-16 mb-[50vh] text-center relative">
+        {/*
+        <h1 className="font-medium text-8xl lg:text-[13rem] text-left leading-none opacity-5 absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-3/4">
           ABOUT
         </h1>
-        <h1 className="font-medium text-[13rem] text-right leading-none opacity-5 w-[625px] absolute top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/4">
+        <h1 className="font-medium text-8xl lg:text-[13rem] text-right leading-none opacity-5 absolute top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/4">
           ME
         </h1>
-        <p className="text-2xl leading-loose absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        */}
+
+        <p className="text-sm sm:text-2xl leading-loose text-left sm:text-center">
           I am a freelance software developer based in the Philippines. <br />
           I create software to solve complex problems.
           <br />
@@ -65,117 +70,111 @@ function LandingPage() {
         </p>
         <Link
           to="/About"
-          className="text-3xl font-medium absolute bottom-0 right-32 underline underline-offset-4 flex flex-row"
+          className="text-md sm:text-3xl font-medium absolute -bottom-12 sm:-bottom-32 sm:right-16 xl:-bottom-32 xl:right-32 underline underline-offset-4 flex flex-row"
         >
           Get to Know Me <MdOutlineKeyboardArrowRight fontSize="1.875rem" />
         </Link>
       </div>
       {/*Projects*/}
       <div className="relative" id="Projects">
-        <h1 className="font-medium text-8xl overflow-hidden opacity-5 whitespace-nowrap">
+        <h1 className="font-medium mb-4 text-4xl sm:text-6xl lg:text-8xl overflow-hidden opacity-5 whitespace-nowrap">
           PROJECTS - PROJECTS - PROJECTS - PROJECTS - PROJECTS - PROJECTS
         </h1>
-        <h1 className="font-medium text-8xl absolute left-32 top-8">
+        <h1 className="font-medium text-4xl sm:text-6xl lg:text-8xl absolute left-8 top-4 sm:left-16 xl:left-32 sm:top-8">
           PROJECTS
         </h1>
         {/*Project Card*/}
-        <div className="p-32">
+        <div className="p-8 sm:p-16 xl:p-32">
           <Link to="/Projects/KaEnteng">
-            <div className="flex flex-row">
-              <div className="basis-1/2 px-6 pt-6 bg-grey">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:px-6 lg:pt-6 bg-grey">
                 <img src={kaenteng_small}></img>
               </div>
-              <div className="basis-1/2 p-12 flex flex-col justify-between">
-                <div>
-                  <hr className="transform -translate-y-12 border-grey border bg-grey"></hr>
-                  <h1 className="text-5xl font-medium">
-                    Ka-Enteng's Farm-to-Table Restaurant
-                  </h1>
-                  <p className="text-xl text-bottom mt-12">
-                    A full-stack concept website for my Software Engineering
-                    course. It has account, reservation, and review
-                    functionalities using Java DB.
-                  </p>
-                </div>
-                <div>
-                  <small className="text-xl">
-                    UI Design, Full-Stack Development
-                  </small>
-                  <div className="flex flex-row space-x-8 mt-8 text-4xl">
-                    <SiJava />
-                    <SiJavascript />
-                    <SiHtml5 />
-                    <SiCss3 />
-                    <SiBootstrap />
-                    <SiAdobexd />
-                  </div>
+              <div className="lg:p-8 flex flex-col space-y-4 sm:space-y-6 lg:justify-between">
+                <hr className="lg:hidden transform -translate-y-12 border-grey border bg-grey"></hr>
+                <h1 className="text-2xl sm:text-4xl xl:text-5xl font-medium">
+                  Ka-Enteng's Farm-to-Table Restaurant
+                </h1>
+                <p className="text-sm sm:text-lg lg:text-xl text-bottom lg:mt-12">
+                  A full-stack concept website for my Software Engineering
+                  course. It has account, reservation, and review
+                  functionalities using Java DB.
+                </p>
+
+                <small className="text-sm sm:text-lg lg:text-xl">
+                  UI Design, Full-Stack Development
+                </small>
+                <div className="flex flex-row space-x-8 lg:mt-8 text-md sm:text-4xl justify-between sm:my-4 lg:text-4xl">
+                  <SiJava />
+                  <SiJavascript />
+                  <SiHtml5 />
+                  <SiCss3 />
+                  <SiBootstrap />
+                  <SiAdobexd />
                 </div>
               </div>
             </div>
           </Link>
         </div>
         {/*Project Card*/}
-        <div className="p-32 pt-0">
+        <div className="p-8 sm:p-16 sm:pt-0 xl:p-32">
           <Link to="/Projects/Luvamine">
-            <div className="flex flex-row">
-              <div className="basis-1/2 px-6 pt-6 bg-grey">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:px-6 lg:pt-6 bg-grey">
                 <img src={luvamine_small}></img>
               </div>
-              <div className="basis-1/2 p-12 flex flex-col justify-between">
-                <div>
-                  <hr className="transform -translate-y-12 border-grey border bg-grey"></hr>
-                  <h1 className="text-5xl font-medium">
-                    Luvamine
-                  </h1>
-                  <p className="text-xl text-bottom mt-12">
-                    A full-stack concept website for my Programming
-                    course. It features account functionality using Java DB and an updating shopping cart using Java.
-                  </p>
-                </div>
-                <div>
-                  <small className="text-xl">
-                    UI Design, Full-Stack Development
-                  </small>
-                  <div className="flex flex-row space-x-8 mt-8 text-4xl">
-                    <SiJava />
-                    <SiJavascript />
-                    <SiHtml5 />
-                    <SiCss3 />
-                    <SiBootstrap />
-                    <SiAdobexd />
-                  </div>
+              <div className="lg:p-8 flex flex-col space-y-4 sm:space-y-6 lg:justify-between">
+                <hr className="lg:hidden transform -translate-y-12 border-grey border bg-grey"></hr>
+                <h1 className="text-2xl sm:text-4xl xl:text-5xl font-medium">
+                  Luvamine
+                </h1>
+                <p className="text-sm sm:text-lg lg:text-xl text-bottom lg:mt-12">
+                  A full-stack concept website for my Programming course. It
+                  features account functionality using Java DB and an updating
+                  shopping cart using Java.
+                </p>
+
+                <small className="text-sm sm:text-lg lg:text-xl">
+                  UI Design, Full-Stack Development
+                </small>
+                <div className="flex flex-row space-x-8 lg:mt-8 text-md sm:text-4xl justify-between sm:my-4 lg:text-4xl">
+                  <SiJava />
+                  <SiJavascript />
+                  <SiHtml5 />
+                  <SiCss3 />
+                  <SiBootstrap />
+                  <SiAdobexd />
                 </div>
               </div>
             </div>
           </Link>
         </div>
         {/*Project Card*/}
-        <div className="p-32 pt-0">
+        <div className="p-8 sm:p-16 sm:pt-0 xl:p-32">
           <Link to="/Projects/Thesis">
-            <div className="flex flex-row">
-              <div className="basis-1/2 p-6 bg-grey">
-              <img src={thesis_small}></img>
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:px-6 lg:pt-6 bg-grey">
+                <img src={thesis_small}></img>
               </div>
-              <div className="basis-1/2 p-12 flex flex-col justify-between">
-                <div>
-                  <hr className="transform -translate-y-12 border-grey border bg-grey"></hr>
-                  <h1 className="text-5xl font-medium">
-                    AI Research on SMOTE and Ensembling
-                  </h1>
-                  <p className="text-xl text-bottom mt-12">
-                  A thesis on the effects of Synthetic Minority Oversampling Technique and Confidence Voting on SVM and RF models in predicting heart disease.
-                  </p>
-                </div>
-                <div>
-                  <small className="text-xl">
-                    Python Code, Data Analysis
-                  </small>
-                  <div className="flex flex-row space-x-8 mt-8 text-4xl">
-                    <SiPython />
-                    <SiScikitlearn />
-                    <SiPandas />
-                    <SiNumpy />
-                  </div>
+              <div className="lg:p-8 flex flex-col space-y-4 sm:space-y-6 lg:justify-between">
+                <hr className="lg:hidden transform -translate-y-12 border-grey border bg-grey"></hr>
+                <h1 className="text-2xl sm:text-4xl xl:text-5xl font-medium">
+                  AI Research on SMOTE and Ensembling
+                </h1>
+                <p className="text-sm sm:text-lg lg:text-xl text-bottom lg:mt-12">
+                  A thesis on the effects of Synthetic Minority Oversampling
+                  Technique and Confidence Voting on SVM and RF models in
+                  predicting heart disease.
+                </p>
+
+                <small className="text-sm sm:text-lg lg:text-xl">
+                  Python Code, Data Analysis
+                </small>
+                <div className="flex flex-row space-x-8 lg:mt-8 text-md sm:text-4xl justify-between sm:my-4 lg:text-4xl">
+                  <SiPython />
+                  <SiScikitlearn />
+                  <SiPandas />
+                  <SiNumpy />
                 </div>
               </div>
             </div>
