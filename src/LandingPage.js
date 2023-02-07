@@ -51,7 +51,7 @@ function LandingPage() {
         </a>
       </div>
       {/*About Me*/}
-      <div className="px-8 sm:px-16 mb-[50vh] text-center relative">
+      <div className="sm:px-16 mb-[50vh]">
         {/*
         <h1 className="font-medium text-8xl lg:text-[13rem] text-left leading-none opacity-5 absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-3/4">
           ABOUT
@@ -61,7 +61,7 @@ function LandingPage() {
         </h1>
         */}
 
-        <p className="text-sm sm:text-2xl leading-loose text-left sm:text-center">
+        <p className="px-8 text-sm sm:text-2xl leading-loose w-fit mx-auto">
           I am a freelance software developer based in the Philippines. <br />
           I create software to solve complex problems.
           <br />
@@ -70,7 +70,7 @@ function LandingPage() {
         </p>
         <Link
           to="/About"
-          className="text-md sm:text-3xl font-medium absolute -bottom-12 sm:-bottom-32 sm:right-16 xl:-bottom-32 xl:right-32 underline underline-offset-4 flex flex-row"
+          className="text-md sm:text-3xl font-medium absolute right-8 -bottom-64 sm:-bottom-64 sm:right-16 xl:right-32 underline underline-offset-4 flex flex-row"
         >
           Get to Know Me <MdOutlineKeyboardArrowRight fontSize="1.875rem" />
         </Link>
@@ -117,7 +117,7 @@ function LandingPage() {
           </Link>
         </div>
         {/*Project Card*/}
-        <div className="p-8 sm:p-16 sm:pt-0 xl:p-32">
+        <div className="p-8 sm:p-16 sm:pt-0 xl:p-32 xl:pt-0">
           <Link to="/Projects/Luvamine">
             <div className="flex flex-col lg:flex-row">
               <div className="lg:px-6 lg:pt-6 bg-grey">
@@ -150,7 +150,7 @@ function LandingPage() {
           </Link>
         </div>
         {/*Project Card*/}
-        <div className="p-8 sm:p-16 sm:pt-0 xl:p-32">
+        <div className="p-8 sm:p-16 sm:pt-0 xl:p-32 xl:pt-0">
           <Link to="/Projects/Thesis">
             <div className="flex flex-col lg:flex-row">
               <div className="lg:px-6 lg:pt-6 bg-grey">
